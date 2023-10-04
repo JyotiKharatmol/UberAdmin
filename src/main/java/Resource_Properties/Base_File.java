@@ -21,10 +21,8 @@ public class Base_File
 	public WebDriver initializeBrowser() throws IOException
 	{
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Resource_Properties/data.properties");
-		
 		pro = new Properties();
 		pro.load(fis);
-		
 		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"):pro.getProperty("browser");
 		
 		if(browserName.equals("chrome"))
@@ -46,7 +44,7 @@ public class Base_File
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		return driver;
 	}
 	

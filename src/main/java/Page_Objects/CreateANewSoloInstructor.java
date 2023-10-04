@@ -1,6 +1,5 @@
 package Page_Objects;
-import java.util.Random;
-
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -172,13 +171,12 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	@FindBy(css="input[name='alias']")
 	WebElement companyAlias;
 	
-	public int companyAlias()
+	public String companyAlias()
 	{
 		waitForElementToBeClickable(companyAlias);
-		Random random = new Random();
-		int randomInt = random.nextInt(1000);
-		companyAlias.sendKeys("alias"+randomInt);
-		return randomInt;
+		String random = RandomStringUtils.randomAlphanumeric(4);
+		companyAlias.sendKeys("alias"+random);
+		return random;
 	}
 	
 	@FindBy(xpath="//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-6 MuiGrid-grid-lg-4']/div[@inputmode='numeric']/div/input[@type='text']")
