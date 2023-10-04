@@ -5,8 +5,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="UberAdmin.Login"/>
-      <class name="UberAdmin.CreateNewSoloInstructor"/>
+      <class name="UberAdmin.UberAdmin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

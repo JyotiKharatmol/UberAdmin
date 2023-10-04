@@ -89,6 +89,7 @@ public class SoloInstructorTab extends AbstractComponent
 	
 	public WebElement soloInstructorAlias_columnHeading()
 	{
+		waitForVisibilityOfElement(soloInstructorAlias_columnHeading);
 		return soloInstructorAlias_columnHeading;
 	}
 	
@@ -133,13 +134,6 @@ public class SoloInstructorTab extends AbstractComponent
 		waitForVisibilityOfElement(createdSoloInstructorAlias);
 		return createdSoloInstructorAlias;
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	@FindBy(xpath="//div[@role='rowgroup']/div")
 	WebElement soloInstructorTable;

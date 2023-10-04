@@ -37,7 +37,13 @@ public class AbstractComponent
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(100));
 		w.until(ExpectedConditions.elementToBeClickable(a));
 	}
-
+	
+	public void waitForTextInElementToBe(WebElement a, String b)
+	{
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(100));
+		w.until(ExpectedConditions.textToBePresentInElement(a, b));
+		
+	}
 	
 
 }

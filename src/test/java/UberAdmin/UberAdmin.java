@@ -102,6 +102,7 @@ public class UberAdmin extends Base_File
 		c.phoneNumber().sendKeys("4565676678");
 		c.soloInstructorEmail().sendKeys("jyoti.kharatmol@azularc.com");
 		int randomInt = c.companyAlias();
+		String st = Integer.toString(randomInt);
 		c.merchantId().sendKeys("516158991");
 		c.merchantUsername().sendKeys("SmartStudioDev");
 		c.merchantPassword().sendKeys("SmartDev!-00");
@@ -110,7 +111,8 @@ public class UberAdmin extends Base_File
 		Assert.assertEquals(s.soloInstructorName_columnHeading().getText(), "Solo Instructor Name");
 		Assert.assertEquals(s.soloInstructorAlias_columnHeading().getText(), "Solo Instructor Alias");
 		Assert.assertEquals(s.createdSoloInstructorName().getText(), "Jyoti Kharatmol");
-		Assert.assertEquals(s.createdSoloInstructorAlias().getText(), "alias"+randomInt);
+		a.waitForTextInElementToBe(s.createdSoloInstructorAlias(), st);
+		Assert.assertEquals(s.createdSoloInstructorAlias().getText(), "alias"+st);
 		s.logout().click();
 		a.waitForURLToContain("login");
 	}
