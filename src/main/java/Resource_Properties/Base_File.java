@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -25,19 +26,27 @@ public class Base_File
 		pro.load(fis);
 		String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"):pro.getProperty("browser");
 		
-		if(browserName.equals("chrome"))
+		if(browserName.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();	
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--headless");
+			options.addArguments("--disable-gbu");
+			options.addArguments("--disable-infobars");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--window-size=1400, 600");
+			driver = new ChromeDriver(options);	
 		}
 		
-		else if(browserName.equals("firefox"))
+		else if(browserName.equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			 driver = new FirefoxDriver();	
 		}
 		
-		else if(browserName.equals("edge"))
+		else if(browserName.equalsIgnoreCase("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();	
