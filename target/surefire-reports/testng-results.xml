@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-02T15:53:13 IST" name="Suite" finished-at="2023-11-02T15:54:36 IST" duration-ms="82958">
+  <suite started-at="2023-11-02T16:10:30 IST" name="Suite" finished-at="2023-11-02T16:11:58 IST" duration-ms="88176">
     <groups>
     </groups>
-    <test started-at="2023-11-02T15:53:13 IST" name="Test" finished-at="2023-11-02T15:54:36 IST" duration-ms="82958">
+    <test started-at="2023-11-02T16:10:30 IST" name="Test" finished-at="2023-11-02T16:11:58 IST" duration-ms="88176">
       <class name="UberAdmin.UberAdmin">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:13 IST" name="initialize" finished-at="2023-11-02T15:53:24 IST" duration-ms="10995" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:30 IST" name="initialize" finished-at="2023-11-02T16:10:42 IST" duration-ms="11947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="LoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:24 IST" name="LoginWithInvalidCredentials" data-provider="getValue" finished-at="2023-11-02T15:53:25 IST" duration-ms="1109" status="PASS">
+        <test-method signature="LoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:42 IST" name="LoginWithInvalidCredentials" data-provider="getValue" finished-at="2023-11-02T16:10:42 IST" duration-ms="838" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:25 IST" name="teardown" finished-at="2023-11-02T15:53:26 IST" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:42 IST" name="teardown" finished-at="2023-11-02T16:10:43 IST" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:26 IST" name="initialize" finished-at="2023-11-02T15:53:32 IST" duration-ms="6592" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:43 IST" name="initialize" finished-at="2023-11-02T16:10:50 IST" duration-ms="6987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="LoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:32 IST" name="LoginWithInvalidCredentials" data-provider="getValue" finished-at="2023-11-02T15:53:33 IST" duration-ms="915" status="PASS">
+        <test-method signature="LoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:50 IST" name="LoginWithInvalidCredentials" data-provider="getValue" finished-at="2023-11-02T16:10:50 IST" duration-ms="698" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:33 IST" name="teardown" finished-at="2023-11-02T15:53:33 IST" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:50 IST" name="teardown" finished-at="2023-11-02T16:10:51 IST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:34 IST" name="initialize" finished-at="2023-11-02T15:53:41 IST" duration-ms="7193" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:51 IST" name="initialize" finished-at="2023-11-02T16:10:58 IST" duration-ms="7450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="LoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:41 IST" name="LoginWithInvalidCredentials" data-provider="getValue" finished-at="2023-11-02T15:53:41 IST" duration-ms="732" status="PASS">
+        <test-method signature="LoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:58 IST" name="LoginWithInvalidCredentials" data-provider="getValue" finished-at="2023-11-02T16:10:59 IST" duration-ms="669" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,43 +75,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:41 IST" name="teardown" finished-at="2023-11-02T15:53:42 IST" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:59 IST" name="teardown" finished-at="2023-11-02T16:10:59 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:42 IST" name="initialize" finished-at="2023-11-02T15:53:49 IST" duration-ms="7009" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:10:59 IST" name="initialize" finished-at="2023-11-02T16:11:05 IST" duration-ms="6427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="LoginWithValidCredentials()[pri:1, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:53:49 IST" name="LoginWithValidCredentials" finished-at="2023-11-02T15:54:00 IST" duration-ms="11427" status="PASS">
+        <test-method signature="LoginWithValidCredentials()[pri:1, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:05 IST" name="LoginWithValidCredentials" finished-at="2023-11-02T16:11:16 IST" duration-ms="10896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:54:00 IST" name="teardown" finished-at="2023-11-02T15:54:00 IST" duration-ms="370" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:16 IST" name="teardown" finished-at="2023-11-02T16:11:19 IST" duration-ms="3165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:54:00 IST" name="initialize" finished-at="2023-11-02T15:54:07 IST" duration-ms="6294" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:19 IST" name="initialize" finished-at="2023-11-02T16:11:29 IST" duration-ms="9280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="ForgotPassword()[pri:2, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:54:07 IST" name="ForgotPassword" finished-at="2023-11-02T15:54:12 IST" duration-ms="5336" status="PASS">
+        <test-method signature="ForgotPassword()[pri:2, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:29 IST" name="ForgotPassword" finished-at="2023-11-02T16:11:34 IST" duration-ms="5361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:54:12 IST" name="teardown" finished-at="2023-11-02T15:54:12 IST" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:34 IST" name="teardown" finished-at="2023-11-02T16:11:34 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:54:12 IST" name="initialize" finished-at="2023-11-02T15:54:19 IST" duration-ms="7152" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:34 IST" name="initialize" finished-at="2023-11-02T16:11:41 IST" duration-ms="6829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="CreateNewSoloInstructor()[pri:4, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:54:19 IST" name="CreateNewSoloInstructor" finished-at="2023-11-02T15:54:36 IST" duration-ms="16464" status="PASS">
+        <test-method signature="CreateNewSoloInstructor()[pri:4, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:41 IST" name="CreateNewSoloInstructor" finished-at="2023-11-02T16:11:57 IST" duration-ms="16546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewSoloInstructor -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@37e4d7bb]" started-at="2023-11-02T15:54:36 IST" name="teardown" finished-at="2023-11-02T15:54:36 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UberAdmin.UberAdmin@4ebff610]" started-at="2023-11-02T16:11:57 IST" name="teardown" finished-at="2023-11-02T16:11:58 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
