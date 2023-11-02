@@ -29,7 +29,9 @@ public class Base_File
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
+			
 			ChromeOptions options = new ChromeOptions();
+			
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--headless");
@@ -37,6 +39,7 @@ public class Base_File
 			options.addArguments("--disable-infobars");
 			options.addArguments("--disable-extensions");
 			options.addArguments("--window-size=1400, 600");
+			
 			driver = new ChromeDriver(options);	
 		}
 		
@@ -57,12 +60,14 @@ public class Base_File
 		return driver;
 	}
 	
-	public void getScreenshotPath(String testCaseName, WebDriver driver) throws IOException
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException
 	{	
-		TakesScreenshot tst = (TakesScreenshot) driver;
-		File source = 	tst.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-		FileUtils.copyFile(source, new File(destination));	
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = 	ts.getScreenshotAs(OutputType.FILE);
+		File dest = new File(System.getProperty("user.dir")+"//reports//"+ testCaseName +".png");
+		FileUtils.copyFile(source, dest);	
+		return System.getProperty("user.dir")+"//reports//"+ testCaseName +".png";
+		
 	}
 
 	

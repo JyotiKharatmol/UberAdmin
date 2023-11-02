@@ -71,6 +71,7 @@ public class SoloInstructorTab extends AbstractComponent
 	public CreateANewSoloInstructor addSoloInstructor()
 	{
 		waitForVisibilityOfElement(addSoloInstructor);
+		waitForElementToBeClickable(addSoloInstructor);
 		addSoloInstructor.click();
 		return new CreateANewSoloInstructor(driver);	
 	}
