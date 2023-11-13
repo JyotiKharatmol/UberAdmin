@@ -123,7 +123,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 		return selectStateArizona;
 	}
 	
-	@FindBy(css="input[name='zip']")
+	@FindBy(xpath="//div/div[7]/div[@inputmode='numeric']/div/input")
 	WebElement zip;
 	
 	public WebElement zip()
@@ -150,7 +150,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 		return lastName;
 	}
 	
-	@FindBy(xpath="//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4']/div[@inputmode='numeric']/div/input")
+	@FindBy(xpath="//div/div[10]/div[@inputmode='numeric']/div/input")
 	WebElement phoneNumber;
 	
 	public WebElement phoneNumber()

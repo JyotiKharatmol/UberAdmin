@@ -8,9 +8,6 @@
     <classes>
       <class name="UberAdmin.UberAdmin">
         <methods>
-          <include name="LoginWithValidCredentials"/>
-          <include name="ForgotPassword"/>
-          <include name="LoginWithInvalidCredentials"/>
           <include name="initialize"/>
           <include name="teardown"/>
           <include name="CreateNewSoloInstructor"/>
