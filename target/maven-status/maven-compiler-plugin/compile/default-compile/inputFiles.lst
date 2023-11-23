@@ -1,8 +1,6 @@
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Page_Objects\AbstractComponent.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Page_Objects\CreateANewSoloInstructor.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Page_Objects\ResetPassword.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Page_Objects\LoginPage.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Page_Objects\SoloInstructorTab.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Resource_Properties\Base_File.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Resource_Properties\ExtentReporterNG.java
-C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\Resource_Properties\Listeners.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\pageObjects\CreateANewSoloInstructor.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\pageObjects\ResetPassword.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\pageObjects\SoloInstructorTab.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\pageObjects\LoginPage.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\resources\ExtentReporterNG.java
+C:\Users\jyoti_xfiqe3z\eclipse-workspace\UberAdmin\src\main\java\abstractComponents\AbstractComponent.java

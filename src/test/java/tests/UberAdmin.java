@@ -1,18 +1,19 @@
-package UberAdmin;
+package tests;
+
 import org.testng.annotations.Test;
 import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import Page_Objects.SoloInstructorTab;
-import Page_Objects.AbstractComponent;
-import Page_Objects.CreateANewSoloInstructor;
-import Page_Objects.LoginPage;
-import Page_Objects.ResetPassword;
-import Resource_Properties.Base_File;
+import pageObjects.CreateANewSoloInstructor;
+import pageObjects.LoginPage;
+import pageObjects.ResetPassword;
+import pageObjects.SoloInstructorTab;
+import testComponents.BaseTest;
+import abstractComponents.AbstractComponent;
 
-public class UberAdmin extends Base_File 
+public class UberAdmin extends BaseTest
 
 {	
 	@BeforeMethod
@@ -29,12 +30,12 @@ public class UberAdmin extends Base_File
 		Assert.assertEquals(l.login_title().getText(), "Login to your account");
 		Assert.assertTrue(l.loginButtonIsDisabled().isDisplayed());
 		l.userName().sendKeys("jyoti.kharatmol@azularc.com");
-		l.password().sendKeys("Password@3");
+		l.password().sendKeys("$m@rtDev!-00");
 		SoloInstructorTab s = l.loginButton();	
 		AbstractComponent a = new AbstractComponent(driver);
+		s.logout().click();
 		a.waitForURLToContain("app");
-		s.logout().click();	
-		a.waitForURLToContain("login");
+
 	}
 	
 	@Test(priority=2)
@@ -66,13 +67,13 @@ public class UberAdmin extends Base_File
 	{
 		Object[][] data = new Object[3][2];
 		data[0][0] = "jyotikharatmol@azularc.com";
-		data[0][1]= "Password@3";
+		data[0][1]= "$m@rtDev!-00";
 	
 		data[1][0] = "jyoti.kharatmol@azularc.com";
-		data[1][1]= "Password@1";
+		data[1][1]= "$m@rtDev!-0";
 		
 		data[2][0] = "jyotikharatmol@azularc.com";
-		data[2][1]= "Password@T";
+		data[2][1]= "$m@rtDev!-";
 		
 	  return data;
 	}
@@ -82,7 +83,7 @@ public class UberAdmin extends Base_File
 	{
 		LoginPage l = new LoginPage(driver);
 		l.userName().sendKeys("jyoti.kharatmol@azularc.com");
-		l.password().sendKeys("Password@3");
+		l.password().sendKeys("$m@rtDev!-00");
 		SoloInstructorTab s = l.loginButton();
 		AbstractComponent a = new AbstractComponent(driver);
 		a.waitForURLToContain("app");

@@ -1,9 +1,11 @@
-package Page_Objects;
+package pageObjects;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import abstractComponents.AbstractComponent;
 
 public class CreateANewSoloInstructor extends AbstractComponent
 {

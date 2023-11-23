@@ -1,4 +1,5 @@
-package Resource_Properties;
+package testComponents;
+
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -7,8 +8,9 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import resources.ExtentReporterNG;
 
-public class Listeners extends Base_File implements ITestListener
+public class Listeners extends BaseTest implements ITestListener
 {
 
 	ExtentReports extent = ExtentReporterNG.getObjectReport();

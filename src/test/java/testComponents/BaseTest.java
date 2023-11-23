@@ -1,4 +1,4 @@
-package Resource_Properties;
+package testComponents;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,14 +14,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Base_File 
+public class BaseTest 
 {
 	public WebDriver driver;
 	public Properties pro;
 
 	public WebDriver initializeBrowser() throws IOException
 	{
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Resource_Properties/data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/GlobalData.properties");
 		pro = new Properties();
 		pro.load(fis);
 		//String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"):pro.getProperty("browser");

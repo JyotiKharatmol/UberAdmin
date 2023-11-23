@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UberAdmin.UberAdmin">
+      <class name="tests.UberAdmin">
         <methods>
-          <include name="initialize"/>
+          <include name="LoginWithValidCredentials"/>
           <include name="teardown"/>
-          <include name="CreateNewSoloInstructor"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- UberAdmin.UberAdmin -->
+      </class> <!-- tests.UberAdmin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

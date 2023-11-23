@@ -1,8 +1,9 @@
-package Page_Objects;
+package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import abstractComponents.AbstractComponent;
 
 public class SoloInstructorTab extends AbstractComponent 
 {
