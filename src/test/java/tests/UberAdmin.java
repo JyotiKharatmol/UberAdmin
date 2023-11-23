@@ -29,13 +29,10 @@ public class UberAdmin extends BaseTest
 		LoginPage l = new LoginPage(driver);
 		Assert.assertEquals(l.login_title().getText(), "Login to your account");
 		Assert.assertTrue(l.loginButtonIsDisabled().isDisplayed());
-		l.userName().sendKeys("jyoti.kharatmol@azularc.com");
-		l.password().sendKeys("$m@rtDev!-00");
+		l.enterCorrectUserName();
+		l.enterCorrectPassword();
 		SoloInstructorTab s = l.loginButton();	
-		AbstractComponent a = new AbstractComponent(driver);
-		s.logout().click();
-		a.waitForURLToContain("app");
-
+		s.logout();
 	}
 	
 	@Test(priority=2)
@@ -43,12 +40,10 @@ public class UberAdmin extends BaseTest
 	{
 		LoginPage l = new LoginPage(driver);
 		ResetPassword r = l.forgotPassword();
-		AbstractComponent a = new AbstractComponent(driver);
-		a.waitForURLToContain("forgotPassword");
-		r.resetPasswordEmail().sendKeys("jyoti.kharatmol@azularc.com");
+		r.resetPasswordEmail();
 		r.sendMeResetPasswordLink();
 		Assert.assertEquals(r.resetPasswordAlert().getText(), "An email has been sent to you with a reset password link.");
-		a.waitForURLToContain("login");
+		
 	}
 	
 	@Test(dataProvider="getValue")
@@ -56,8 +51,8 @@ public class UberAdmin extends BaseTest
 	{	
 		driver.get(pro.getProperty("url"));
 		LoginPage l = new LoginPage(driver);
-		l.userName().sendKeys(EmailId);
-		l.password().sendKeys(Password);
+		l.enterUserName().sendKeys(EmailId);
+		l.enterPassword().sendKeys(Password);
 		l.loginButton();
 		Assert.assertEquals(driver.getCurrentUrl(), "https://smartstudio-stage.azul-arc.com/#/login");
 	}
@@ -82,39 +77,38 @@ public class UberAdmin extends BaseTest
 	public void CreateNewSoloInstructor()
 	{
 		LoginPage l = new LoginPage(driver);
-		l.userName().sendKeys("jyoti.kharatmol@azularc.com");
-		l.password().sendKeys("$m@rtDev!-00");
+		l.enterCorrectUserName();
+		l.enterCorrectPassword();
 		SoloInstructorTab s = l.loginButton();
-		AbstractComponent a = new AbstractComponent(driver);
-		a.waitForURLToContain("app");
-		s.soloTab().click();
+		s.soloTab();
 		CreateANewSoloInstructor c = s.addSoloInstructor();
 		Assert.assertEquals(c.createANewSoloInstructor_title().getText(), "Create a New Solo Instructor");
-		c.brandName().sendKeys("Cross-Fit");
-		c.selectTimeZone().click();
-		c.selectTimeZoneEastern().click();
-		c.address1().sendKeys("Highland Street 120");
-		c.city().sendKeys("Atlanta");
-		c.selectState().click();
-		c.selectStateArizona().click();
-		c.zip().sendKeys("30300");
-		c.firstName().sendKeys("Jyoti");
-		c.lastName().sendKeys("Kharatmol");
-		c.phoneNumber().sendKeys("4565676678");
-		c.soloInstructorEmail().sendKeys("jyoti.kharatmol@azularc.com");
+		c.brandName();
+		c.selectTimeZone();
+		c.selectTimeZoneEastern();
+		c.address1();
+		c.city();
+		c.selectState();
+		c.selectStateArizona();
+		c.zip();
+		c.firstName();
+		c.lastName();
+		c.phoneNumber();
+		c.soloInstructorEmail();
 		String random = c.companyAlias();
-		c.merchantId().sendKeys("516158991");
-		c.merchantUsername().sendKeys("SmartStudioDev");
-		c.merchantPassword().sendKeys("SmartDev!-00");
-		c.saveAndSendInvite().click();	
+		c.merchantId();
+		c.merchantUsername();
+		c.merchantPassword();
+		c.saveAndSendInvite();
 		Assert.assertEquals(s.emailSentToSoloInstructorAlertMessage().getText(), "Thank you for adding a solo instructor! A link has been sent to the Email ID entered.");
 		Assert.assertEquals(s.soloInstructorName_columnHeading().getText(), "Solo Instructor Name");
 		Assert.assertEquals(s.soloInstructorAlias_columnHeading().getText(), "Solo Instructor Alias");
 		Assert.assertEquals(s.createdSoloInstructorName().getText(), "Jyoti Kharatmol");
-		a.waitForTextInElementToBe(s.createdSoloInstructorAlias(), random);
+		AbstractComponent a = new AbstractComponent(driver);
+		a.waitForTextToBePresentInElement(s.createdSoloInstructorAlias(), random);
 		Assert.assertEquals(s.createdSoloInstructorAlias().getText(), "alias"+random);
-		s.logout().click();
-		a.waitForURLToContain("login");
+		s.logout();
+		
 	}
 	
 	

@@ -37,6 +37,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	{
 		waitForVisibilityOfAllElements(createANewSoloInstructor_elements);
 		waitForElementToBeClickable(brandName);
+		brandName.sendKeys("Cross-Fit");
 		return brandName;
 	}
 	
@@ -46,6 +47,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement selectTimeZone()
 	{
 		waitForElementToBeClickable(selectTimeZone);
+		selectTimeZone.click();
 		return selectTimeZone;	
 	}
 	
@@ -64,6 +66,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement selectTimeZoneEastern()
 	{
 		waitForVisibilityOfElement(selectTimeZoneEastern);
+		selectTimeZoneEastern.click();
 		return selectTimeZoneEastern;
 	}
 	
@@ -88,6 +91,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	
 	public WebElement address1()
 	{
+		address1.sendKeys("Highland Street 120");
 		return address1;
 	}
 	
@@ -104,6 +108,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	
 	public WebElement city()
 	{
+		city.sendKeys("Atlanta");
 		return city;
 	}
 	
@@ -113,6 +118,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement selectState()
 	{
 		waitForElementToBeClickable(selectState);
+		selectState.click();
 		return selectState;
 	}
 	
@@ -122,6 +128,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement selectStateArizona()
 	{
 		waitForVisibilityOfElement(selectStateArizona);
+		selectStateArizona.click();
 		return selectStateArizona;
 	}
 	
@@ -131,6 +138,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement zip()
 	{
 		waitForElementToBeClickable(zip);
+		zip.sendKeys("30300");
 		return zip;
 	}
 	
@@ -140,6 +148,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement firstName()
 	{
 		waitForElementToBeClickable(firstName);
+		firstName.sendKeys("Jyoti");
 		return firstName;
 	}
 	
@@ -149,6 +158,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement lastName()
 	{
 		waitForElementToBeClickable(lastName);
+		lastName.sendKeys("Kharatmol");
 		return lastName;
 	}
 	
@@ -158,6 +168,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement phoneNumber()
 	{
 		waitForElementToBeClickable(phoneNumber);
+		phoneNumber.sendKeys("4565676678");
 		return phoneNumber;
 	}
 	
@@ -167,6 +178,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement soloInstructorEmail()
 	{
 		waitForElementToBeClickable(soloInstructorEmail);
+		soloInstructorEmail.sendKeys("jyoti.kharatmol+solo@azularc.com");
 		return soloInstructorEmail;
 	}
 	
@@ -187,6 +199,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement merchantId()
 	{
 		waitForElementToBeClickable(merchantId);
+		merchantId.sendKeys("516158991");
 		return merchantId;
 	}
 	
@@ -196,6 +209,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement merchantUsername()
 	{
 		waitForElementToBeClickable(merchantUsername);
+		merchantUsername.sendKeys("SmartStudioDev");
 		return merchantUsername;
 	}
 	
@@ -205,6 +219,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement merchantPassword()
 	{
 		waitForElementToBeClickable(merchantPassword);
+		merchantPassword.sendKeys("SmartDev!-00");
 		return merchantPassword;
 	}
 	
@@ -214,6 +229,7 @@ public class CreateANewSoloInstructor extends AbstractComponent
 	public WebElement saveAndSendInvite()
 	{
 		waitForElementToBeClickable(saveAndSendInvite);
+		saveAndSendInvite.click();
 		return saveAndSendInvite;
 	}
 	

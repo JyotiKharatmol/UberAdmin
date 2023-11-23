@@ -29,21 +29,35 @@ public class LoginPage extends AbstractComponent
 	}
 	
 	@FindBy(css="input[name='emailId']")
-	WebElement userName;
+	WebElement enterUserName;
 	
-	public WebElement userName()
+	public WebElement enterCorrectUserName()
 	{
-		waitForVisibilityOfElement(userName);
-		return userName;
+		waitForVisibilityOfElement(enterUserName);
+		enterUserName.sendKeys("jyoti.kharatmol@azularc.com");
+		return enterUserName;
 	}
 	
-	@FindBy(css="input[name='password']")
-	WebElement password;
-	
-	public WebElement password()
+	public WebElement enterUserName()
 	{
-		waitForVisibilityOfElement(password);
-		return password;
+		waitForVisibilityOfElement(enterUserName);
+		return enterUserName;
+	}
+
+	@FindBy(css="input[name='password']")
+	WebElement enterPassword;
+	
+	public WebElement enterCorrectPassword()
+	{
+		waitForVisibilityOfElement(enterPassword);
+		enterPassword.sendKeys("$m@rtDev!-00");
+		return enterPassword;
+	}
+	
+	public WebElement enterPassword()
+	{
+		waitForVisibilityOfElement(enterPassword);
+		return enterPassword;
 	}
 	
 	@FindBy(linkText="Forgot password?")

@@ -61,8 +61,10 @@ public class SoloInstructorTab extends AbstractComponent
 	
 	public WebElement soloTab()
 	{
+		waitForURLToContain("app");
 		waitForVisibilityOfElement(soloTab);
 		waitForElementToBeClickable(soloTab);
+		soloTab.click();
 		return soloTab;
 	}
 	
@@ -133,6 +135,7 @@ public class SoloInstructorTab extends AbstractComponent
 	
 	public WebElement createdSoloInstructorAlias()
 	{
+	
 		waitForVisibilityOfElement(createdSoloInstructorAlias);
 		return createdSoloInstructorAlias;
 	}
@@ -159,7 +162,10 @@ public class SoloInstructorTab extends AbstractComponent
 
 	public WebElement logout()
 	{
+		waitForURLToContain("app");
 		waitForVisibilityOfElement(logout);
+		logout.click();
+		waitForURLToContain("login");
 		return logout;
 	}
 

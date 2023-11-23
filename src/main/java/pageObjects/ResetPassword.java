@@ -22,6 +22,8 @@ public class ResetPassword extends AbstractComponent
 	
 	public WebElement resetPasswordEmail()
 	{
+		waitForURLToContain("forgotPassword");
+		resetPasswordEmail.sendKeys("jyoti.kharatmol@azularc.com");
 		return resetPasswordEmail;
 	}
 	
